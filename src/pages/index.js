@@ -1,10 +1,18 @@
 import React from "react";
 import Layout from '../components/Layout/Layout';
 
+import classes from './styles/index.module.css';
+
 export default () => {
     return <Layout>
-        <h1>Hi</h1>
-        <h1>I'm Omer</h1>
-        <h2>I’m a full-stack developer based in Los Angeles and I specialize in building performant web applications.</h2>
+        <div className={classes.Hero}>
+
+            <div className={classes.HeroTextBox}>
+                <h1>Hi, I'm Omer</h1>
+                <p>I’m a full-stack developer based in Los Angeles and I specialize in building performant web applications.</p>
+
+            </div>
+        </div>
+        
     </Layout>
 }

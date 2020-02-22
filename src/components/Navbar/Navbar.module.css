@@ -4,4 +4,39 @@
     height: 80px;
     top: 0;
     left: 0;
+    background-color: rgba(0, 0, 0, .05);
+}
+
+.Logo {
+    display: inline-block;
+    margin: 0;
+    position: absolute;
+    left: 8vw;
+    top: 20px;
+}
+
+.LogoLink {
+    text-decoration: none;
+    color: inherit;
+}
+
+.NavList {
+    margin: 0;
+    list-style: none;
+    padding-inline-start: 0;
+    width: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    right: 5vw;
+    top: 30px;
+}
+
+.NavListItem {
+    display: inline-block;
+}
+
+.NavLink {
+    color: inherit;
+    text-decoration: none;
 }

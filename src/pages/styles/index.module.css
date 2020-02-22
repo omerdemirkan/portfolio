@@ -1,0 +1,11 @@
+.Hero {
+    min-height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.HeroTextBox {
+    width: 100%;
+    max-width: 800px;
+}

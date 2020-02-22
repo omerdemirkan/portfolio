@@ -1,0 +1,5 @@
+.Footer {
+    background-color: rgba(0, 0, 0, .05);
+    overflow: auto;
+    height: 100px;
+}
