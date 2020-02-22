@@ -3,9 +3,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 100px;
+    box-sizing: border-box;
 }
 
 .HeroTextBox {
     width: 100%;
     max-width: 800px;
+}
+
+.SkillsSection {
+    min-height: 400px;
+}
+
+.SkillBox {
+    width: 100%;
+    max-width: 400px;
+}
+
+.ReactLogo {
+    width: 100px;
 }

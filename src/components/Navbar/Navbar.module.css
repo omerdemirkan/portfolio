@@ -4,7 +4,8 @@
     height: 80px;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, .05);
+    background-color: rgb(219, 219, 219);
+    z-index: 10;
 }
 
 .Logo {

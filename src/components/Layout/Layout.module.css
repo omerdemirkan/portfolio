@@ -2,6 +2,6 @@
     overflow: auto;
     padding-top: 80px;
     box-sizing: border-box;
-    min-height: calc(100vh + 80px);
+    min-height: 100vh;
     margin: 0;
 }
