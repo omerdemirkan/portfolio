@@ -3,7 +3,9 @@ import Layout from '../components/Layout/Layout';
 
 import classes from './styles/index.module.css';
 
-import reactLogo from '../images/react.svg';
+import languages from '../images/languages.svg';
+import frontend from '../images/front-end-frameworks.svg';
+import backend from '../images/back-end-frameworks.svg';
 
 export default () => {
     return <Layout>
@@ -15,9 +17,23 @@ export default () => {
 
             </div>
         </div>
+
         <div className={classes.SkillsSection}>
+            <h1 className={classes.SkillsSectionHeader}>What do I know?</h1>
+
             <div className={classes.SkillBox}>
-                <img src={reactLogo} className={classes.ReactLogo}/>
+                <img src={languages} className={classes.Logos}/>
+
+            </div>
+                
+            <div className={classes.SkillBox}>
+                <img src={frontend} className={classes.Logos}/>
+
+            </div>
+
+            <div className={classes.SkillBox}>
+                <img src={backend} className={classes.Logos}/>
+
             </div>
         </div>
         

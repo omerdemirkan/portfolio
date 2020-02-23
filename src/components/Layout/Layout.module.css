@@ -1,6 +1,6 @@
 .Layout {
     overflow: auto;
-    padding-top: 80px;
+    padding: 80px 0;
     box-sizing: border-box;
     min-height: 100vh;
     margin: 0;
