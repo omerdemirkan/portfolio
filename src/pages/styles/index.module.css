@@ -11,24 +11,3 @@
     width: 100%;
     max-width: 800px;
 }
-
-.SkillsSection {
-    min-height: 400px;
-    padding: 0 5%;
-}
-
-.SkillsSectionHeader {
-    text-align: center;
-}
-
-.SkillBox {
-    width: 100%;
-    max-width: 900px;
-    display: flex;
-}
-
-.Logos {
-    width: 100%;
-    max-width: 400px;
-    user-select: none;
-}
