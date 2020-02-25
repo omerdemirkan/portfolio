@@ -5,9 +5,41 @@
     align-items: center;
     padding: 0 5% 100px;
     box-sizing: border-box;
+    background-color: white;
+}
+
+body {
+    margin: 0;
 }
 
 .HeroTextBox {
     width: 100%;
     max-width: 800px;
+}
+
+.ProjectsSection {
+    background-color: #EFEFEF;
+    overflow: auto;
+    padding: 0 5%;
+}
+
+.ProjectsSectionHeader {
+    text-align: center;
+    margin: 8vh 0;
+}
+
+.Project {
+    position: relative;
+}
+
+.ProjectHeader {
+
+}
+
+.GithubIcon {
+
+}
+
+.LinkIcon {
+    
 }
