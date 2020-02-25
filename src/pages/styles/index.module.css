@@ -1,3 +1,13 @@
+body {
+    margin: 0;
+    color: #636363;
+    font-family: 'Roboto', sans-serif;
+}
+
+.Orange {
+    color: #FF8A00;
+}
+
 .Hero {
     min-height: calc(100vh - 80px);
     display: flex;
@@ -8,19 +18,56 @@
     background-color: white;
 }
 
-body {
-    margin: 0;
-}
-
 .HeroTextBox {
     width: 100%;
-    max-width: 800px;
+    max-width: 750px;
+}
+
+.HeroIntoductionBox {
+    margin-bottom: -50px;
+}
+
+.HiHeader {
+    user-select: none;
+}
+
+.NameHeader {
+    text-align: end;
+    font-size: 130px;
+    line-height: 75%;
+    margin: 0;
+    transform: translateY(-100%);
+    font-weight: 400;
+}
+
+.Hero p {
+    margin-bottom: 3rem;
+}
+
+.PrimaryButton {
+    background-color: #FF8A00;
+    border: none;
+    width: 200px;
+    height: 40px;
+    color: white;
+    font-size: 1.2rem;
+    margin-right: 30px;
+}
+
+.SecondaryButton {
+    background-color: transparent;
+    box-sizing: border-box;
+    width: 200px;
+    height: 40px;
+    border: none;
+    border: 2px solid #FF8A00;
+    color: #FF8A00;
+    font-size: 1.2rem;
 }
 
 .ProjectsSection {
     background-color: #EFEFEF;
     overflow: auto;
-    padding: 0 5%;
 }
 
 .ProjectsSectionHeader {
@@ -30,16 +77,43 @@ body {
 
 .Project {
     position: relative;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    margin-top: 8vh;
+    overflow: auto;
+    background-color: white;
 }
 
 .ProjectHeader {
+    margin-top: 0;
+}
+
+.ProjectParagraph {
 
 }
 
 .GithubIcon {
-
+    position: absolute;
+    top: 20px;
+    right: 40px;
 }
 
 .LinkIcon {
+    position: absolute;
+    top: 20px;
+    right: 90px;
     
+}
+
+@media (max-width: 768px) {
+    .HiHeader {
+        display: none;
+    }
+
+    .NameHeader {
+        transform: translateY(0);
+    }
 }
