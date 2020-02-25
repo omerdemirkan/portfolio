@@ -42,6 +42,7 @@ body {
 
 .Hero p {
     margin-bottom: 3rem;
+    font-size: 1.2rem;
 }
 
 .PrimaryButton {
@@ -52,6 +53,9 @@ body {
     color: white;
     font-size: 1.2rem;
     margin-right: 30px;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
 }
 
 .SecondaryButton {
@@ -63,6 +67,19 @@ body {
     border: 2px solid #FF8A00;
     color: #FF8A00;
     font-size: 1.2rem;
+    outline: none;
+    cursor: pointer;
+    transition: color border-color 0.2s ease;
+}
+
+.PrimaryButton:hover {
+    background-color: rgb(243, 130, 0);
+}
+
+.SecondaryButton:hover {
+    color: rgb(221, 118, 0);
+    border-color: rgb(221, 118, 0);
+    
 }
 
 .ProjectsSection {
@@ -92,7 +109,7 @@ body {
 }
 
 .ProjectParagraph {
-
+    
 }
 
 .GithubIcon {
@@ -115,5 +132,24 @@ body {
 
     .NameHeader {
         transform: translateY(0);
+        font-size: calc(30vw);
+        margin-bottom: 10vw;
+    }
+
+    .HeroIntoductionBox {
+        margin-bottom: 0;
+    }
+
+    .PrimaryButton {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    
+    .SecondaryButton {
+        width: 100%;
+    }
+    .Hero {
+        padding: 0 5%;
     }
 }
