@@ -92,39 +92,6 @@ body {
     margin: 8vh 0;
 }
 
-.Project {
-    position: relative;
-    padding: 20px 30px;
-    box-sizing: border-box;
-    width: 100%;
-    max-width: 900px;
-    margin: auto;
-    margin-top: 8vh;
-    overflow: auto;
-    background-color: white;
-}
-
-.ProjectHeader {
-    margin-top: 0;
-}
-
-.ProjectParagraph {
-    
-}
-
-.GithubIcon {
-    position: absolute;
-    top: 20px;
-    right: 40px;
-}
-
-.LinkIcon {
-    position: absolute;
-    top: 20px;
-    right: 90px;
-    
-}
-
 @media (max-width: 768px) {
     .HiHeader {
         display: none;
