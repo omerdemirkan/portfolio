@@ -8,8 +8,8 @@ import linkIcon from '../../images/link.svg';
 export default function WorkoutShare() {
     return <div>
         <h2>Workout Share</h2>
-        <img src={linkIcon} className={classes.LinkIcon}/>
-        <img src={githubIcon} className={classes.GithubIcon}/>
+        <img src={linkIcon} className={projectClasses.LinkIcon}/>
+        <img src={githubIcon} className={projectClasses.GithubIcon}/>
 
         <h3>Description</h3>
         <p>Workout Share is a website where you can create your workouts and share them with friends with a sharable link. The user is also able to browse through other popular workouts ranked by likes and time, with the ability to favorite posts. Workouts that the user has liked and posted are stored and can be accessed through designated pages It is personalized out of the box, so there is no username or password needed. Users have access to their workouts and favorited workouts through a Javascript Web Token stored on the client.</p>

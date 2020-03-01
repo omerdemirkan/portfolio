@@ -5,7 +5,6 @@ import classes from './styles/index.module.css';
 
 import githubIcon from '../images/github.svg';
 import linkIcon from '../images/link.svg';
-import hi from '../images/hi.svg';
 
 import {Link as Scroll} from 'react-scroll';
 import {Link} from 'gatsby';
@@ -16,7 +15,6 @@ export default () => {
 
             <div className={classes.HeroTextBox}>
                 <div className={classes.HeroIntoductionBox}>
-                    <img src={hi} className={classes.HiHeader}/>
                     <h1 className={classes.NameHeader}>I'm <span className={classes.Orange}>Omer</span>.</h1>
                 </div>
                 
