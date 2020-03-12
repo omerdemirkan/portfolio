@@ -80,11 +80,35 @@ mark {
 
 .HeroSection img {
     position: absolute;
-    bottom: -1px;
+    bottom: -2px;
     left: 50%;
     transform: translate(-50%);
     width: 80vw;
     max-width: 300px;
+}
+
+.MeSection {
+    background-color: #0066FF;
+    color: white;
+    overflow: auto;
+    padding: 8vh 5vw;
+}
+
+.MeSection h1 {
+    text-align: center;
+}
+
+.MePairBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 700px;
+    margin: 30px auto;
+}
+
+.MePairBox img {
+    margin-right: 40px;
 }
 
 @media (max-width: 768px) {
@@ -103,5 +127,17 @@ mark {
     
     .HeroTextBox p {
         text-align: start;
+    }
+
+    .MePairBox {
+        flex-direction: column;
+    }
+    
+    .MePairBox img {
+        margin: 10px;
+    }
+    
+    .MePairBox p {
+        text-align: center;
     }
 }

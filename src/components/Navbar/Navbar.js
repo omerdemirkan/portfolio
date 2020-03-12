@@ -26,7 +26,7 @@ export default function Navbar() {
 
     const logoText = '{OD}'
 
-    return <div className={classes.Navbar} style={navBackground ? {backgroundColor: 'rgb(235, 237, 240)', height: '80px'}: null}>
+    return <div className={classes.Navbar} style={navBackground ? {backgroundColor: 'rgb(243, 245, 247)', height: '80px'}: null}>
         <h2 className={classes.Logo}><Link className={classes.LogoLink} to='/'>{logoText}</Link></h2>
         <ul className={classes.NavList}>
             <li className={classes.NavListItem}><Link activeClassName={classes.ActiveLink} to='/' className={classes.NavLink}>Home</Link></li>

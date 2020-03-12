@@ -4,10 +4,11 @@ import Layout from '../components/Layout/Layout';
 import classes from './styles/index.module.css';
 
 // images
-import heroImage from '../images/hero-image.svg'
-import workoutshare from '../images/workoutshare.png';
-import synonymy from '../images/synonymy.png';
-import whattime from '../images/whattime.png';
+import heroImage from '../images/hero-image.svg';
+import me from '../images/me.png';
+// import workoutshare from '../images/workoutshare.png';
+// import synonymy from '../images/synonymy.png';
+// import whattime from '../images/whattime.png';
 
 import {Link as Scroll} from 'react-scroll';
 import {Link} from 'gatsby';
@@ -32,10 +33,13 @@ export default () => {
             
         </div>
 
-        <div>
+        <div className={classes.MeSection}>
             <h1>Here’s Who I Am</h1>
-            <div>
-                <p>I am a Turkish-American Computer Science student at Los Angeles Mission College and a hobbyist Full Stack Developer. I have a passion for building full fledged web applications from the bottom up, from simple and intuitive user interfaces to database structures.</p>
+            <div className={classes.MePairBox}>
+                <img src={me}/>
+                <div>
+                    <p>I am a Turkish-American Computer Science student at Los Angeles Mission College and a hobbyist Full Stack Developer. I have a passion for building full fledged web applications from the bottom up, from simple and intuitive user interfaces to database structures.</p>
+                </div>
             </div>
         </div>
 
@@ -44,15 +48,15 @@ export default () => {
             <h1>Here's Some Of My Work</h1>
             <div>
                 <div>
-                    <img src={synonymy}/>
+                    {/* <img src={synonymy}/> */}
 
                 </div>
                 <div>
-                    <img src={whattime}/>
+                    {/* <img src={whattime}/> */}
                     
                 </div>
                 <div>
-                    <img src={workoutshare}/>
+                    {/* <img src={workoutshare}/> */}
                     
                 </div>
             </div>
