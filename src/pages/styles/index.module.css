@@ -13,6 +13,12 @@ mark {
     overflow: auto;
     position: relative;
     overflow: hidden;
+    padding: 0 5vw 300px;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
+
 }
 
 .HeroTextBox {
@@ -28,6 +34,7 @@ mark {
 
 .HeroTextBox p {
     font-size: 18px;
+    text-align: center;
 }
 
 .HeroButtonsBox {
@@ -45,12 +52,18 @@ mark {
     font-family: "Montserrat", "sans-serif";
     border-radius: 5rem;
     font-size: 1.1rem;
+    outline: none;
 } 
 
 .MainHeaderButton {
     border: none;
     color: white;
     background-color: #0066FF;
+    transition: background-color .2s ease;
+}
+
+.MainHeaderButton:hover {
+    background-color: rgb(0, 96, 240);
 }
 
 .SecondaryHeaderButton {
@@ -60,9 +73,35 @@ mark {
     font-weight: 500;
 }
 
+.SecondaryHeaderButton:hover {
+    border: 2px solid rgb(0, 78, 194);
+    color: rgb(0, 78, 194);
+}
+
 .HeroSection img {
     position: absolute;
     bottom: -1px;
     left: 50%;
     transform: translate(-50%);
+    width: 80vw;
+    max-width: 300px;
+}
+
+@media (max-width: 768px) {
+    .HeroButtonsBox {
+        flex-direction: column;
+        width: 100%;
+    }
+    .HeroButtonsBox button {
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    .HeroTextBox h1 {
+        text-align: start;
+    }
+    
+    .HeroTextBox p {
+        text-align: start;
+    }
 }
