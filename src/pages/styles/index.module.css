@@ -1,3 +1,68 @@
 body {
     margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+mark {
+    background-color: transparent;
+    color: #0066FF;
+}
+
+.HeroSection {
+    min-height: calc(100vh - 80px);
+    overflow: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.HeroTextBox {
+    max-width: 800px;
+    width: 90%;
+    margin: auto;
+}
+
+.HeroTextBox h1 {
+    font-size: 80px;
+    text-align: center;
+}
+
+.HeroTextBox p {
+    font-size: 18px;
+}
+
+.HeroButtonsBox {
+    width: 90%;
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 0;
+}   
+
+.HeroButtonsBox button {
+    width: 210px;
+    height: 42px;
+    font-family: "Montserrat", "sans-serif";
+    border-radius: 5rem;
+    font-size: 1.1rem;
+} 
+
+.MainHeaderButton {
+    border: none;
+    color: white;
+    background-color: #0066FF;
+}
+
+.SecondaryHeaderButton {
+    border: 2px solid #0066FF;
+    color: #0066FF;
+    background-color: transparent;
+    font-weight: 500;
+}
+
+.HeroSection img {
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    transform: translate(-50%);
 }

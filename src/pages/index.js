@@ -14,16 +14,17 @@ import {Link} from 'gatsby';
 
 export default () => {
     return <Layout>
-        <div>
+        <div className={classes.HeroSection}>
 
-            <div>
-                <h1>I’m Ömer</h1>
-                <h1>Full Stack Developer</h1>
+            <div className={classes.HeroTextBox}>
+                <h1>Hi, I’m <mark>Ömer</mark></h1>
                 
                 <div>
                     <p>I am a Computer Science Student and Software Engineer based in Los Angeles, and I specialize in building performant web applications.</p>
-                    <Scroll smooth={true} duration={500} offset={-80} to='projects-section'><button>See My Work</button></Scroll>
-                    <Link to='/contact'><button>Contact Me</button></Link>
+                    <div className={classes.HeroButtonsBox}>
+                        <Scroll smooth={true} duration={500} offset={-80} to='projects-section'><button className={classes.MainHeaderButton}>See My Work</button></Scroll>
+                        <Link to='/contact'><button className={classes.SecondaryHeaderButton}>Contact Me</button></Link>
+                    </div>
                 </div>
                 
             </div>
