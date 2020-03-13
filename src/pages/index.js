@@ -11,9 +11,9 @@ import waves from '../images/home-page/waves.svg';
 import frontEnd from '../images/skills/front-end.svg';
 import backEnd from '../images/skills/back-end.svg';
 import languages from '../images/skills/languages.svg';
-// import workoutshare from '../images/workoutshare.png';
-// import synonymy from '../images/synonymy.png';
-// import whattime from '../images/whattime.png';
+import workoutshare from '../images/home-page/projects/workoutshare.png';
+import synonymy from '../images/home-page/projects/synonymy.png';
+import whattime from '../images/home-page/projects/whattime.png';
 
 import {Link as Scroll} from 'react-scroll';
 import {Link} from 'gatsby';
@@ -86,16 +86,23 @@ export default () => {
             <h1>Here's Some Of My Work</h1>
             <div className={classes.ProjectsBox}>
                 <div className={classes.ProjectBox}>
-                    {/* <img src={synonymy}/> */}
-
+                    <img src={synonymy}/>
+                    <h2>Synonymy</h2>
+                    <p>A program that detects overused words in essays and recommends synonyms.</p>
+                    <Link to='/projects/synonymy'><button>See More</button></Link>
                 </div>
                 <div className={classes.ProjectBox}>
-                    {/* <img src={whattime}/> */}
+                    <img src={whattime}/>
+                    <h2>What Time</h2>
+                    <p>A productivity tool that helps an event organizer find times that every member is available.</p>
+                    <Link to='/projects/whattime'><button>See More</button></Link>
                     
                 </div>
                 <div className={classes.ProjectBox}>
-                    {/* <img src={workoutshare}/> */}
-                    
+                    <img src={workoutshare}/>
+                    <h2>Workout Share</h2>
+                    <p>A platform to create, browse and share workouts with friends.</p>
+                    <Link to='/projects/workoutshare'><button>See More</button></Link>
                 </div>
             </div>
         </div>

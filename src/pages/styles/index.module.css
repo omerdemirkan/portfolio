@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    color: #313131;
 }
 
 img {
@@ -126,6 +127,7 @@ mark {
     text-align: center;
     color: white;
     position: relative;
+    margin-bottom: 60px;
 }
 
 .WavesImage {
@@ -167,23 +169,117 @@ mark {
 }
 
 .ProjectsSection {
-    padding: 8vh 5vw;
+    padding: 12vh 8vw;
 }
 
 .ProjectsSection h1 {
     text-align: center;
     color: #0066FF;
+    padding-bottom: 3vh;
 }
 
 .ProjectsBox {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    padding: 3vh 8vw;
 }
 
 .ProjectBox {
-    
+    background-color: white;
+    width: 22vw;
+    height: 16vw;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.15);
+    margin: 3vh 0;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    padding: 0 20px;
+    bottom: 0;
+    transition: bottom 0.2s ease;
+}
+
+.ProjectBox:hover {
+    bottom: 3px;
+}
+
+.ProjectBox img {
+    height: 100%;
+    transition: opacity 0.1s ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%)
+}
+
+.ProjectBox:hover img {
+    opacity: .1;
+    transition: opacity 0.1s ease;
+}
+
+.ProjectBox h2 {
+    text-align: center;
+    position: relative;
+    opacity: 0;
+    transition: opacity 0.1s ease;
+    margin-bottom: 4vh;
+}
+
+.ProjectBox p {
+    text-align: center;
+    position: relative;
+    opacity: 0;
+    transition: opacity 0.1s ease;
+}
+
+.ProjectBox a {
+    opacity: 0;
+    transition: opacity 0.1s ease;
+    position: relative;
+}
+
+.ProjectBox button {
+    width: 80%;
+    margin-left: 50%;
+    transform: translate(-50%);
+    background-color: white;
+    height: 42px;
+    font-family: "Montserrat", "sans-serif";
+    border-radius: 5rem;
+    font-size: 1.1rem;
+    outline: none;
+    border: 2px solid #0066FF;
+    color: #0066FF;
+    background-color: transparent;
+    font-weight: 500;
+    align-self: baseline;
+}
+
+.ProjectBox button:hover {
+    border: 2px solid rgb(0, 78, 194);
+    color: rgb(0, 78, 194);
+}
+
+.ProjectBox:hover h2 {
+    opacity: 1;
+    transition: opacity 0.1s ease;
+}
+
+.ProjectBox:hover p {
+    opacity: 1;
+    transition: opacity 0.1s ease;
+}
+
+.ProjectBox:hover a {
+    opacity: 1;
+    transition: opacity 0.1s ease;
+}
+
+@media (max-width: 1200px) {
+    .ProjectBox {
+        width: 36vw;
+        height: 26vw;
+    }
 }
 
 @media (max-width: 768px) {
@@ -224,6 +320,10 @@ mark {
     .SkillBox div {
         text-align: center;
         margin: 3vh 0;
+    }
 
+    .ProjectBox {
+        width: calc(100vw - 16vw);
+        height: 60vw;
     }
 }
