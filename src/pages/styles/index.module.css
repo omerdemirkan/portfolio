@@ -4,6 +4,11 @@ body {
     color: #313131;
 }
 
+p {
+    font-family: 'Baloo Chettan 2', sans-serif;
+    font-size: 1.1rem;
+}
+
 img {
     user-select: none;
 }
@@ -11,6 +16,11 @@ img {
 mark {
     background-color: transparent;
     color: #0066FF;
+}
+
+button {
+    outline: none;
+    cursor: pointer;
 }
 
 .HeroSection {
@@ -186,17 +196,22 @@ mark {
 
 .ProjectBox {
     background-color: white;
-    width: 22vw;
-    height: 16vw;
+    width: 84vw;
+    height: 60vw;
+    max-width: 400px;
+    max-height: 320px;
     box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.15);
-    margin: 3vh 0;
+    margin: 3vh 1vw;
     border-radius: 1rem;
     box-sizing: border-box;
     position: relative;
     overflow: hidden;
     padding: 0 20px;
     bottom: 0;
-    transition: bottom 0.2s ease;
+    transition: 0.2s ease;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 .ProjectBox:hover {
@@ -222,7 +237,7 @@ mark {
     position: relative;
     opacity: 0;
     transition: opacity 0.1s ease;
-    margin-bottom: 4vh;
+    margin: 2vw 0;
 }
 
 .ProjectBox p {
@@ -230,6 +245,7 @@ mark {
     position: relative;
     opacity: 0;
     transition: opacity 0.1s ease;
+    font-weight: 500;
 }
 
 .ProjectBox a {
@@ -239,7 +255,7 @@ mark {
 }
 
 .ProjectBox button {
-    width: 80%;
+    width: 90%;
     margin-left: 50%;
     transform: translate(-50%);
     background-color: white;
@@ -248,16 +264,16 @@ mark {
     border-radius: 5rem;
     font-size: 1.1rem;
     outline: none;
-    border: 2px solid #0066FF;
-    color: #0066FF;
+    border: 2px solid rgb(99, 99, 99);
+    color: rgb(99, 99, 99);
     background-color: transparent;
     font-weight: 500;
-    align-self: baseline;
+    margin-bottom: 2vw;
 }
 
 .ProjectBox button:hover {
-    border: 2px solid rgb(0, 78, 194);
-    color: rgb(0, 78, 194);
+    border: 2px solid #0066FF;
+    color: #0066FF;
 }
 
 .ProjectBox:hover h2 {
@@ -273,13 +289,6 @@ mark {
 .ProjectBox:hover a {
     opacity: 1;
     transition: opacity 0.1s ease;
-}
-
-@media (max-width: 1200px) {
-    .ProjectBox {
-        width: 36vw;
-        height: 26vw;
-    }
 }
 
 @media (max-width: 768px) {
@@ -321,9 +330,12 @@ mark {
         text-align: center;
         margin: 3vh 0;
     }
+}
 
-    .ProjectBox {
-        width: calc(100vw - 16vw);
-        height: 60vw;
+@media (pointer: none) {
+
+    .ProjectBox img {
+        opacity: 1;
     }
+
 }

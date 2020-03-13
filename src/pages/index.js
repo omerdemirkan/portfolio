@@ -94,7 +94,7 @@ export default () => {
                 <div className={classes.ProjectBox}>
                     <img src={whattime}/>
                     <h2>What Time</h2>
-                    <p>A productivity tool that helps an event organizer find times that every member is available.</p>
+                    <p>A productivity tool that helps an event organizer find times people are available.</p>
                     <Link to='/projects/whattime'><button>See More</button></Link>
                     
                 </div>

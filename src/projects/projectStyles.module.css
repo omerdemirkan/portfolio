@@ -1,0 +1,71 @@
+.Project {
+    padding: 5vh 5vw;
+}
+
+.Main {
+    position: relative;
+
+    width: 95%;
+    max-width: 800px;
+    margin: auto;
+}
+
+.ProjectHeader {
+    text-align: center;
+    color: #0066FF;
+    margin-bottom: 8vh;
+}
+
+.LinkIcon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.GithubIcon {
+    position: absolute;
+    top: 10px;
+    right: 70px;
+    cursor: pointer;
+}
+
+.LinkIcon:hover {
+    opacity: .8;
+}
+
+.GithubIcon:hover {
+    opacity: .8;
+}
+
+.TextSection {
+    margin: 6vh 0;
+}
+
+.TextSection h3 {
+    color: #0066FF;
+}
+
+.SubSection {
+    width: 50%;
+    display: inline-block;
+}
+
+.SubSection h3 {
+    color: #0066FF;
+}
+
+.Contributor {
+    width: 40px;
+}
+
+.TechnologiesBox {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media () {
+    
+}
