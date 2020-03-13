@@ -17,7 +17,7 @@ mark {
     overflow: auto;
     position: relative;
     overflow: hidden;
-    padding: 0 5vw 300px;
+    padding: 0 8vw 300px;
     box-sizing: border-box;
 
     display: flex;
@@ -27,7 +27,7 @@ mark {
 
 .HeroTextBox {
     max-width: 800px;
-    width: 90%;
+    width: 100%;
     margin: auto;
 }
 
@@ -95,7 +95,7 @@ mark {
     background-color: #0066FF;
     color: white;
     overflow: auto;
-    padding: 8vh 5vw;
+    padding: 8vh 8vw;
 }
 
 .MeSection h1 {
@@ -116,7 +116,7 @@ mark {
 }
 
 .SkillsSection {
-    padding: 0 5vw;
+    padding: 0 8vw;
     position: relative;
     overflow: hidden;
     min-height: 600px;
@@ -138,14 +138,13 @@ mark {
 
 .SkillsBox {
     background-color: white;
-    width: 90vw;
+    width: 100%;
     max-width: 600px;
     box-sizing: border-box;
     padding: 20px 30px;
     border-radius: 1rem;
     position: relative;
-    margin: auto;
-    margin-top: 3vh;
+    margin: 3vh auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -165,6 +164,26 @@ mark {
 .SkillBox div {
     margin-left: 30px;
     min-width: 250px;
+}
+
+.ProjectsSection {
+    padding: 8vh 5vw;
+}
+
+.ProjectsSection h1 {
+    text-align: center;
+    color: #0066FF;
+}
+
+.ProjectsBox {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 3vh 8vw;
+}
+
+.ProjectBox {
+    
 }
 
 @media (max-width: 768px) {
