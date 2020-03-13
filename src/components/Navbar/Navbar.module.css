@@ -40,5 +40,6 @@
 }
 
 .ActiveLink {
-    text-decoration: underline;
+    color: #0066FF;
+    font-weight: 700;
 }

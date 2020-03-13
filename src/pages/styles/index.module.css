@@ -3,6 +3,10 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+img {
+    user-select: none;
+}
+
 mark {
     background-color: transparent;
     color: #0066FF;
@@ -104,11 +108,63 @@ mark {
     align-items: center;
     width: 100%;
     max-width: 700px;
-    margin: 30px auto;
+    margin: 30px auto 15px;
 }
 
 .MePairBox img {
     margin-right: 40px;
+}
+
+.SkillsSection {
+    padding: 0 5vw;
+    position: relative;
+    overflow: hidden;
+    min-height: 600px;
+}
+
+.SkillsSection h1 {
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.WavesImage {
+    min-width: 100vw;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: -1px;
+}
+
+.SkillsBox {
+    background-color: white;
+    width: 90vw;
+    max-width: 600px;
+    box-sizing: border-box;
+    padding: 20px 30px;
+    border-radius: 1rem;
+    position: relative;
+    margin: auto;
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.SkillBox {
+    margin: 3vh 0;
+    display: flex;
+    justify-content: start;
+}
+
+.SkillImage {
+    width: 200px;
+}
+
+.SkillBox div {
+    margin-left: 30px;
+    min-width: 250px;
 }
 
 @media (max-width: 768px) {
@@ -139,5 +195,16 @@ mark {
     
     .MePairBox p {
         text-align: center;
+    }
+
+    .SkillBox {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .SkillBox div {
+        text-align: center;
+        margin: 3vh 0;
+
     }
 }
