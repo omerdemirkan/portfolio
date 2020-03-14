@@ -13,29 +13,26 @@
 .ProjectHeader {
     text-align: center;
     color: #0066FF;
-    margin-bottom: 8vh;
+    margin-bottom: 5vh;
 }
 
-.LinkIcon {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
+.LinkList {
+    list-style: none;
+    padding-inline-start: 0;
 }
 
-.GithubIcon {
-    position: absolute;
-    top: 10px;
-    right: 70px;
-    cursor: pointer;
+.LinkList li {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
 }
 
-.LinkIcon:hover {
-    opacity: .8;
+.LinkList img {
+    margin-right: 20px;
 }
 
-.GithubIcon:hover {
-    opacity: .8;
+.LinkList a {
+    color: #0066FF;
 }
 
 .TextSection {
@@ -91,12 +88,11 @@
 .NodeBox {
     display: flex;
     justify-content: center;
-    height: 10px;
 }
 
 .Node {
-    width: 10px;
-    height: 10px;
+    width: 11px;
+    height: 11px;
     background-color: #313131;
     opacity: .5;
     border-radius: 2rem;
@@ -112,5 +108,16 @@
         display: inline-block;
         margin: 3vh 0;
     }
+
+    .ProjectHeader {
+        text-align: start;
+    }
     
+    .TechnologiesBox {
+        width: 100%;
+    }
+
+    .GifsSection {
+        display: none;
+    }
 }

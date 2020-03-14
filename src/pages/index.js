@@ -26,7 +26,7 @@ export default () => {
                 <h1>Hi, I’m <mark>Ömer</mark></h1>
                 
                 <div>
-                    <p>I am a Computer Science Student and Software Engineer based in Los Angeles, and I specialize in building performant web applications.</p>
+                    <p>I am a Computer Science Student and Software Engineer based in <mark>Los Angeles</mark>, and I specialize in building performant web applications.</p>
                     <div className={classes.HeroButtonsBox}>
                         <Scroll smooth={true} duration={500} offset={-100} to='projects-section'><button className={classes.MainHeaderButton}>See My Work</button></Scroll>
                         <Link to='/contact'><button className={classes.SecondaryHeaderButton}>Get In Touch</button></Link>

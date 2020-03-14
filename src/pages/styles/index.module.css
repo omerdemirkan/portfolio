@@ -237,7 +237,8 @@ button {
     position: relative;
     opacity: 0;
     transition: opacity 0.1s ease;
-    margin: 2vw 0;
+    margin: 3vw 0 0;
+    color: #0066FF;
 }
 
 .ProjectBox p {
@@ -264,16 +265,16 @@ button {
     border-radius: 5rem;
     font-size: 1.1rem;
     outline: none;
-    border: 2px solid rgb(99, 99, 99);
-    color: rgb(99, 99, 99);
-    background-color: transparent;
+    background-color: #0066FF;
+    border: none;
+    color: white;
     font-weight: 500;
-    margin-bottom: 2vw;
+    margin-bottom: 3vw;
+    transition: background-color 0.1s ease;
 }
 
 .ProjectBox button:hover {
-    border: 2px solid #0066FF;
-    color: #0066FF;
+    background-color: rgb(0, 92, 230);
 }
 
 .ProjectBox:hover h2 {

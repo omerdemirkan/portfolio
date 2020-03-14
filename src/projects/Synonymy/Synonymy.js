@@ -29,8 +29,20 @@ export default function Synonymy() {
         <div className={projectClasses.Main}>
             <h1 className={projectClasses.ProjectHeader}>Synonymy</h1>
 
-            <a href='https://synonymy-app.herokuapp.com/' target='_blank'><img src={linkIcon} className={projectClasses.LinkIcon}/></a>
-            <a href='https://github.com/omerdemirkan/synonymy' target='_blank'><img src={githubIcon} className={projectClasses.GithubIcon}/></a>
+            <ul className={projectClasses.LinkList}>
+                <li>
+                    <img src={linkIcon} style={{transform: 'translateY(2px)'}}/>
+                    <a href='https://synonymy-app.herokuapp.com/' target='_blank'>Live Website</a>
+                </li>
+
+                <li>
+                    <img src={githubIcon}/>
+                    <a href='https://github.com/omerdemirkan/synonymy' target='_blank'>Repository</a>
+                </li>
+            </ul>
+            
+            
+
             
             <div className={projectClasses.TextSection}>
                 <h3>Description</h3>
@@ -46,7 +58,7 @@ export default function Synonymy() {
 
             <div className={projectClasses.SubSection}>
                 <h3>Technologies</h3>
-                <div className={projectClasses.TechnologiesBox} style={{width: '70%'}}>
+                <div className={projectClasses.TechnologiesBox}>
                     <img src={react}/>
                     <img src={redux}/>
                     <img src={node}/>
