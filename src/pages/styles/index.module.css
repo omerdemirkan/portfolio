@@ -335,6 +335,19 @@ button {
 @media (pointer: none) {
 
     .ProjectBox img {
+        opacity: .1;
+        top: 0;
+    }
+
+    .ProjectBox h2 {
+        opacity: 1;
+    }
+    
+    .ProjectBox p {
+        opacity: 1;
+    }
+    
+    .ProjectBox a {
         opacity: 1;
     }
 

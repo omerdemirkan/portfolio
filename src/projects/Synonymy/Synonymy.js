@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import classes from './Synonymy.module.css';
 import projectClasses from '../projectStyles.module.css';
 
@@ -10,10 +10,22 @@ import redux from '../../images/technologies/redux.svg';
 import node from '../../images/technologies/node.svg';
 import express from '../../images/technologies/express.svg';
 
+// Gifs
+import gif1 from '../../images/gifs/synonymy-gif-1.gif';
+import gif2 from '../../images/gifs/synonymy-gif-2.gif';
+
 export default function Synonymy() {
+
+    // Functionality that allows user to browse gifs. I know its janky, but I'm in a hurry.
+    const [gifNum, setGifNum] = useState(1);
+
+    const nodeList = <>
+        <span className={projectClasses.Node} onClick={() => setGifNum(1)} style={gifNum === 1 ? {opacity: 1} : null}></span>
+        <span className={projectClasses.Node} onClick={() => setGifNum(2)} style={gifNum === 2 ? {opacity: 1} : null}></span>
+    </>;
+
+
     return <div className={projectClasses.Project}>
-
-
         <div className={projectClasses.Main}>
             <h1 className={projectClasses.ProjectHeader}>Synonymy</h1>
 
@@ -34,7 +46,7 @@ export default function Synonymy() {
 
             <div className={projectClasses.SubSection}>
                 <h3>Technologies</h3>
-                <div className={classes.TechnologiesBox}>
+                <div className={projectClasses.TechnologiesBox} style={{width: '70%'}}>
                     <img src={react}/>
                     <img src={redux}/>
                     <img src={node}/>
@@ -52,6 +64,16 @@ export default function Synonymy() {
                     />
                 </a>
             </div>
+            
+        </div>
+
+        <div className={projectClasses.GifsSection}>
+            <h3>See It In Action!</h3>
+            <div className={projectClasses.NodeBox}>
+                {nodeList}
+            </div>
+            <img src={gif1} style={gifNum === 1 ? {display: 'inline-block'} : null}/>
+            <img src={gif2} style={gifNum === 2 ? {display: 'inline-block'} : null}/>
             
         </div>
         
