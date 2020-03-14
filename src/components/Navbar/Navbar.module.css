@@ -12,7 +12,10 @@
 }
 
 .Logo {
+    position: relative;
     margin: 0 0 0 14vw;
+    width: 120px;
+    transition: width 0.1s ease, transform 0.1s ease;
 }
 
 .LogoLink {

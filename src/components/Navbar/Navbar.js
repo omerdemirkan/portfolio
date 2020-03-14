@@ -1,6 +1,8 @@
 import React, { useRef, useState, useEffect } from 'react';
 import classes from './Navbar.module.css';
 
+import logo from '../../images/portfolio-logo.svg';
+
 import { Link } from 'gatsby';
 
 export default function Navbar() {
@@ -27,7 +29,12 @@ export default function Navbar() {
     const logoText = '<Omer/>'
 
     return <div className={classes.Navbar} style={navBackground ? {backgroundColor: 'rgb(248, 248, 248)', height: '80px'}: null}>
-        <h2 className={classes.Logo}><Link className={classes.LogoLink} to='/'>{logoText}</Link></h2>
+        {/* <h2 className={classes.Logo}><Link className={classes.LogoLink} to='/'>{logoText}</Link></h2> */}
+        <Link className={classes.LogoLink} to='/'>
+            <img src={logo} 
+            className={classes.Logo} 
+            style={navBackground ? {width: '100px', transform: 'translate(10px)'}: null}/>
+        </Link>
         <ul className={classes.NavList}>
             <li className={classes.NavListItem}><Link activeClassName={classes.ActiveLink} to='/' className={classes.NavLink}>Home</Link></li>
             <li className={classes.NavListItem}><Link activeClassName={classes.ActiveLink} to='/contact' className={classes.NavLink}>Contact Me</Link></li>
