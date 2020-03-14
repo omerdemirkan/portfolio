@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from '../components/Layout/Layout';
+import ProjectCard from '../components/ProjectCard/ProjectCard';
 
 import classes from './styles/index.module.css';
 
@@ -20,13 +21,14 @@ import {Link} from 'gatsby';
 
 export default () => {
     return <Layout>
+
         <div className={classes.HeroSection}>
 
             <div className={classes.HeroTextBox}>
                 <h1>Hi, I’m <mark>Ömer</mark></h1>
                 
                 <div>
-                    <p>I am a Computer Science Student and Software Engineer based in <mark>Los Angeles</mark>, and I specialize in building performant web applications.</p>
+                    <p>I am a Computer Science Student and Full Stack Developer based in <mark>Los Angeles</mark>, and I specialize in building performant web applications.</p>
                     <div className={classes.HeroButtonsBox}>
                         <Scroll smooth={true} duration={500} offset={-100} to='projects-section'><button className={classes.MainHeaderButton}>See My Work</button></Scroll>
                         <Link to='/contact'><button className={classes.SecondaryHeaderButton}>Get In Touch</button></Link>
@@ -43,7 +45,7 @@ export default () => {
             <div className={classes.MePairBox}>
                 <img src={me}/>
                 <div>
-                    <p>I am a Turkish-American Computer Science student at Los Angeles Mission College and a hobbyist Full Stack Developer. I have a passion for building full fledged web applications from the bottom up: from simple and intuitive user interfaces to API design.</p>
+                    <p>I am a Turkish-American Computer Science student at Los Angeles Mission College and a hobbyist Software Engineer. I have a passion for building full fledged web applications from the bottom up: from simple and intuitive user interfaces to API design.</p>
                 </div>
             </div>
         </div>
@@ -53,6 +55,7 @@ export default () => {
             <h1>Here's What I'm Good At</h1>
 
             <div className={classes.SkillsBox}>
+
 
                 <div className={classes.SkillBox}>
                     <img src={languages} className={classes.SkillImage}/>
@@ -85,25 +88,25 @@ export default () => {
         <div id='projects-section' className={classes.ProjectsSection}>
             <h1>Here's Some Of My Work</h1>
             <div className={classes.ProjectsBox}>
-                <div className={classes.ProjectBox}>
-                    <img src={synonymy}/>
-                    <h2>Synonymy</h2>
-                    <p>A program that detects overused words in essays and recommends synonyms.</p>
-                    <Link to='/projects/synonymy'><button>See More</button></Link>
-                </div>
-                <div className={classes.ProjectBox}>
-                    <img src={whattime}/>
-                    <h2>What Time</h2>
-                    <p>A productivity tool that helps an event organizer find times people are available.</p>
-                    <Link to='/projects/whattime'><button>See More</button></Link>
-                    
-                </div>
-                <div className={classes.ProjectBox}>
-                    <img src={workoutshare}/>
-                    <h2>Workout Share</h2>
-                    <p>A platform to create, browse and share workouts with friends.</p>
-                    <Link to='/projects/workoutshare'><button>See More</button></Link>
-                </div>
+                
+                <ProjectCard
+                img={synonymy}
+                title='Synonymy'
+                description='A program that detects overused words in essays and recommends synonyms.'
+                link='/projects/synonymy'
+                />
+                <ProjectCard
+                img={whattime}
+                title='What Time'
+                description='A productivity tool that helps an event organizer find times people are available.'
+                link='/projects/whattime'
+                />
+                <ProjectCard
+                img={workoutshare}
+                title='Workout Share'
+                description='A platform to create, browse and share workouts with friends.'
+                link='/projects/workoutshare'
+                />
             </div>
         </div>
         

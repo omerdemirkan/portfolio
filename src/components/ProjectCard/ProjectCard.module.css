@@ -1,0 +1,97 @@
+.ProjectCard {
+    background-color: white;
+    width: 84vw;
+    height: 60vw;
+    max-width: 400px;
+    max-height: 320px;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.15);
+    margin: 3vh 1vw;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    padding: 0 20px;
+    bottom: 0;
+    transition: 0.2s ease;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.ProjectCard:hover {
+    bottom: 3px;
+}
+
+.ProjectCard img {
+    height: 100%;
+    transition: opacity 0.1s ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%)
+}
+
+.ProjectCard:hover img {
+    opacity: .1;
+    transition: opacity 0.1s ease;
+}
+
+.ProjectCard h2 {
+    text-align: center;
+    position: relative;
+    opacity: 0;
+    transition: opacity 0.1s ease;
+    margin: 3vw 0 0;
+    color: #0066FF;
+}
+
+.ProjectCard p {
+    text-align: center;
+    position: relative;
+    opacity: 0;
+    transition: opacity 0.1s ease;
+    font-weight: 500;
+}
+
+.ProjectCard a {
+    opacity: 0;
+    transition: opacity 0.1s ease;
+    position: relative;
+}
+
+.ProjectCard button {
+    width: 90%;
+    margin-left: 50%;
+    transform: translate(-50%);
+    background-color: white;
+    height: 42px;
+    font-family: "Montserrat", "sans-serif";
+    border-radius: 5rem;
+    font-size: 1.1rem;
+    outline: none;
+    background-color: #0066FF;
+    border: none;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 3vw;
+    transition: background-color 0.1s ease;
+}
+
+.ProjectCard button:hover {
+    background-color: rgb(0, 92, 230);
+}
+
+.ProjectCard:hover h2 {
+    opacity: 1;
+    transition: opacity 0.1s ease;
+}
+
+.ProjectCard:hover p {
+    opacity: 1;
+    transition: opacity 0.1s ease;
+}
+
+.ProjectCard:hover a {
+    opacity: 1;
+    transition: opacity 0.1s ease;
+}
