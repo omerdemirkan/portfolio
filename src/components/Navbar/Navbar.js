@@ -26,10 +26,7 @@ export default function Navbar() {
         }
     }, []);
 
-    const logoText = '<Omer/>'
-
     return <div className={classes.Navbar} style={navBackground ? {backgroundColor: 'rgb(248, 248, 248)', height: '80px'}: null}>
-        {/* <h2 className={classes.Logo}><Link className={classes.LogoLink} to='/'>{logoText}</Link></h2> */}
         <Link className={classes.LogoLink} to='/'>
             <img src={logo} 
             className={classes.Logo} 

@@ -1,5 +1,25 @@
 .Footer {
     background-color: rgba(0, 0, 0, .05);
     overflow: auto;
-    height: 100px;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MainBox {
+
+}
+
+.MainBox h3  {
+    margin: 0 0 10px;
+}
+
+.MainBox div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.MainBox img:hover {
+    opacity: .8;
 }

@@ -40,7 +40,7 @@ export default function Synonymy() {
             
             <div className={projectClasses.TextSection}>
                 <h3>Challenges</h3>
-                <p className={projectClasses.ProjectParagraph}>Implementing all text-searching functionality on the client proved to be difficult. The web app parses all words locally and only sends a request for ten synonyms.An issue came from refreshing the search after the user stops typing. Initially, the web app would send a new request for ten words on each search, regardless of whether or not there were any new words to get synonyms for. To solve this issue, I had all loaded synonyms stored in redux and made a second action creator specifically for refreshing a search that would ignore words with synonyms already loaded and would bypass the request entirely if no new words show up in the top ten.</p>
+                <p className={projectClasses.ProjectParagraph}>Implementing all text-searching functionality on the client proved to be difficult. The web app parses all words locally and only sends a request for ten synonyms. An issue came from refreshing the search after the user stops typing. Initially, the web app would send a new request for ten words on each search, regardless of whether or not there were any new words to get synonyms for. To solve this issue, I had all loaded synonyms stored in redux and made a second action creator specifically for refreshing a search that would ignore words with synonyms already loaded and would bypass the request entirely if no new words show up in the top ten.</p>
 
             </div>
 
