@@ -41,7 +41,7 @@
     position: relative;
     opacity: 0;
     transition: opacity 0.1s ease;
-    margin: 3vw 0 0;
+    margin: 40px 0 0;
     color: #0066FF;
 }
 
@@ -73,7 +73,7 @@
     border: none;
     color: white;
     font-weight: 500;
-    margin-bottom: 3vw;
+    margin-bottom: 40px;
     transition: background-color 0.1s ease;
 }
 
@@ -94,4 +94,20 @@
 .ProjectCard:hover a {
     opacity: 1;
     transition: opacity 0.1s ease;
+}
+
+@media (max-width: 500px) {
+
+    .ProjectCard h2 {
+        font-size: 1.2rem;
+        margin-top: 3vw;
+    }
+
+    .ProjectCard p {
+        font-size: 1rem;
+    }
+
+    .ProjectCard button {
+        margin-bottom: 3vw;
+    }
 }

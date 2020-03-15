@@ -12,9 +12,11 @@ import waves from '../images/home-page/waves.svg';
 import frontEnd from '../images/skills/front-end.svg';
 import backEnd from '../images/skills/back-end.svg';
 import languages from '../images/skills/languages.svg';
+
 import workoutshare from '../images/home-page/projects/workoutshare.png';
 import synonymy from '../images/home-page/projects/synonymy.png';
 import whattime from '../images/home-page/projects/whattime.png';
+import journaly from '../images/home-page/projects/journaly.png';
 
 import {Link as Scroll} from 'react-scroll';
 import {Link} from 'gatsby';
@@ -106,6 +108,13 @@ export default () => {
                 title='Workout Share'
                 description='A platform to create, browse and share workouts with friends.'
                 link='/projects/workoutshare'
+                />
+                <ProjectCard
+                img={journaly}
+                title='Journaly'
+                outOfSite
+                description='A platform where readers can rate and support journalists (Hacktech 2020 submission).'
+                link='https://devpost.com/software/journaly'
                 />
             </div>
         </div>

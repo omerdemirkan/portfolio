@@ -46,3 +46,17 @@
     color: #0066FF;
     font-weight: 700;
 }
+
+@media (max-width: 788px) {
+    .NavList {
+        display: none;
+    }
+
+    .Logo {
+        margin: 0;
+    }
+
+    .Navbar {
+        justify-content: center;
+    }
+}
