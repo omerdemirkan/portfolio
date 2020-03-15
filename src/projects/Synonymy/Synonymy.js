@@ -3,16 +3,16 @@ import classes from './Synonymy.module.css';
 import projectClasses from '../projectStyles.module.css';
 
 // Images
-import githubIcon from '../../images/github.svg';
-import linkIcon from '../../images/link.svg';
-import react from '../../images/technologies/react.svg';
-import redux from '../../images/technologies/redux.svg';
-import node from '../../images/technologies/node.svg';
-import express from '../../images/technologies/express.svg';
+import githubIcon from '../../assets/svgs/github.svg';
+import linkIcon from '../../assets/svgs/link.svg';
+import react from '../../assets/svgs/technologies/react.svg';
+import redux from '../../assets/svgs/technologies/redux.svg';
+import node from '../../assets/svgs/technologies/node.svg';
+import express from '../../assets/svgs/technologies/express.svg';
 
 // Gifs
-import gif1 from '../../images/gifs/synonymy-gif-1.gif';
-import gif2 from '../../images/gifs/synonymy-gif-2.gif';
+import gif1 from '../../assets/gifs/synonymy-gif-1.gif';
+import gif2 from '../../assets/gifs/synonymy-gif-2.gif';
 
 export default function Synonymy() {
 

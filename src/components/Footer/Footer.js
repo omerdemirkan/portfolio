@@ -1,9 +1,9 @@
 import React from 'react';
 import classes from './Footer.module.css';
 
-import github from '../../images/github.svg';
-import linkedin from '../../images/linkedin.svg';
-import email from '../../images/email.svg';
+import github from '../../assets/svgs/github.svg';
+import linkedin from '../../assets/svgs/linkedin.svg';
+import email from '../../assets/svgs/email.svg';
 
 export default function Footer() {
     return <div className={classes.Footer}>

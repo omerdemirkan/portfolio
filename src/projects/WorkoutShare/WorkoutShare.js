@@ -3,17 +3,17 @@ import classes from './WorkoutShare.module.css';
 import projectClasses from '../projectStyles.module.css';
 
 // Images
-import githubIcon from '../../images/github.svg';
-import linkIcon from '../../images/link.svg';
-import react from '../../images/technologies/react.svg';
-import redux from '../../images/technologies/redux.svg';
-import node from '../../images/technologies/node.svg';
-import express from '../../images/technologies/express.svg';
-import mongodb from '../../images/technologies/mongodb.svg';
+import githubIcon from '../../assets/svgs/github.svg';
+import linkIcon from '../../assets/svgs/link.svg';
+import react from '../../assets/svgs/technologies/react.svg';
+import redux from '../../assets/svgs/technologies/redux.svg';
+import node from '../../assets/svgs/technologies/node.svg';
+import express from '../../assets/svgs/technologies/express.svg';
+import mongodb from '../../assets/svgs/technologies/mongodb.svg';
 
 // Gifs
-import gif1 from '../../images/gifs/workoutshare-gif-1.gif';
-import gif2 from '../../images/gifs/workoutshare-gif-2.gif';
+import gif1 from '../../assets/gifs/workoutshare-gif-1.gif';
+import gif2 from '../../assets/gifs/workoutshare-gif-2.gif';
 
 export default function WorkoutShare() {
 

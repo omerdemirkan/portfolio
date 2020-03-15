@@ -1,7 +1,7 @@
 import React, { useRef, useState, useEffect } from 'react';
 import classes from './Navbar.module.css';
 
-import logo from '../../images/portfolio-logo.svg';
+import logo from '../../assets/svgs/portfolio-logo.svg';
 
 import { Link } from 'gatsby';
 

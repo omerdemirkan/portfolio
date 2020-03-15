@@ -5,18 +5,18 @@ import ProjectCard from '../components/ProjectCard/ProjectCard';
 import classes from './styles/index.module.css';
 
 // images
-import heroImage from '../images/home-page/hero-image.svg';
-import me from '../images/home-page/me.png';
-import waves from '../images/home-page/waves.svg';
+import heroImage from '../assets/svgs/hero-image.svg';
+import me from '../assets/images/me.png';
+import waves from '../assets/svgs/waves.svg';
 
-import frontEnd from '../images/skills/front-end.svg';
-import backEnd from '../images/skills/back-end.svg';
-import languages from '../images/skills/languages.svg';
+import frontEnd from '../assets/svgs/skills/front-end.svg';
+import backEnd from '../assets/svgs/skills/back-end.svg';
+import languages from '../assets/svgs/skills/languages.svg';
 
-import workoutshare from '../images/home-page/projects/workoutshare.PNG';
-import synonymy from '../images/home-page/projects/synonymy.PNG';
-import whattime from '../images/home-page/projects/whattime.PNG';
-import journaly from '../images/home-page/projects/journaly.PNG';
+import workoutshare from '../assets/images/projects/workoutshare.jpg';
+import synonymy from '../assets/images/projects/synonymy.jpg';
+import whattime from '../assets/images/projects/whattime.jpg';
+import journaly from '../assets/images/projects/journaly.jpg';
 
 import {Link as Scroll} from 'react-scroll';
 import {Link} from 'gatsby';
