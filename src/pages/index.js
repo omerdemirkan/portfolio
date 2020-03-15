@@ -2,7 +2,7 @@ import React from "react";
 import Layout from '../components/Layout/Layout';
 import ProjectCard from '../components/ProjectCard/ProjectCard';
 
-import classes from './styles/index.module.css';
+import classes from '../styles/index.module.css';
 
 // images
 import heroImage from '../assets/svgs/hero-image.svg';
