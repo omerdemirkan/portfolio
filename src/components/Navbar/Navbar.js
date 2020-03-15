@@ -34,7 +34,7 @@ export default function Navbar() {
         </Link>
         <ul className={classes.NavList}>
             <li className={classes.NavListItem}><Link activeClassName={classes.ActiveLink} to='/' className={classes.NavLink}>Home</Link></li>
-            <li className={classes.NavListItem}><Link activeClassName={classes.ActiveLink} to='/contact' className={classes.NavLink}>Contact Me</Link></li>
+            <li className={classes.NavListItem}><a activeClassName={classes.ActiveLink} href='mailto:omerfarukpiano@gmail.com' className={classes.NavLink}>Contact Me</a></li>
         </ul>
     </div>
 }
