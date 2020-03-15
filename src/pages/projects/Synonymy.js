@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import classes from './Synonymy.module.css';
-import projectClasses from '../projectStyles.module.css';
+import Layout from '../../components/Layout/Layout';
+import projectClasses from './projectStyles.module.css';
 
 // Images
 import githubIcon from '../../assets/svgs/github.svg';
@@ -25,7 +25,7 @@ export default function Synonymy() {
     </>;
 
 
-    return <div className={projectClasses.Project}>
+    return <Layout><div className={projectClasses.Project}>
         <div className={projectClasses.Main}>
             <h1 className={projectClasses.ProjectHeader}>Synonymy</h1>
 
@@ -89,5 +89,5 @@ export default function Synonymy() {
             
         </div>
         
-    </div>
+    </div></Layout>
 }
