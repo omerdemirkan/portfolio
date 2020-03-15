@@ -13,10 +13,10 @@ import frontEnd from '../images/skills/front-end.svg';
 import backEnd from '../images/skills/back-end.svg';
 import languages from '../images/skills/languages.svg';
 
-import workoutshare from '../images/home-page/projects/workoutshare.png';
-import synonymy from '../images/home-page/projects/synonymy.png';
-import whattime from '../images/home-page/projects/whattime.png';
-import journaly from '../images/home-page/projects/journaly.png';
+import workoutshare from '../images/home-page/projects/workoutshare.PNG';
+import synonymy from '../images/home-page/projects/synonymy.PNG';
+import whattime from '../images/home-page/projects/whattime.PNG';
+import journaly from '../images/home-page/projects/journaly.PNG';
 
 import {Link as Scroll} from 'react-scroll';
 import {Link} from 'gatsby';
