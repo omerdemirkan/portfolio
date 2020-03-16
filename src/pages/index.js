@@ -113,9 +113,8 @@ export default () => {
                 <ProjectCard
                 img={journaly}
                 title='Journaly'
-                outOfSite
                 description='A platform where readers can rate and support journalists (Hacktech 2020 submission).'
-                link='https://devpost.com/software/journaly'
+                link='/projects/journaly'
                 />
             </div>
         </div>

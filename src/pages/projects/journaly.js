@@ -10,10 +10,11 @@ import redux from '../../assets/svgs/technologies/redux.svg';
 import node from '../../assets/svgs/technologies/node.svg';
 import express from '../../assets/svgs/technologies/express.svg';
 import mongodb from '../../assets/svgs/technologies/mongodb.svg';
+import chrome from '../../assets/svgs/technologies/chrome.svg';
 
 // Gifs
-import gif1 from '../../assets/gifs/whattime-gif-1.gif';
-import gif2 from '../../assets/gifs/whattime-gif-2.gif';
+import gif1 from '../../assets/gifs/journaly-gif-1.gif';
+import gif2 from '../../assets/gifs/journaly-gif-2.gif';
 
 export default function WhatTime() {
 
@@ -27,17 +28,17 @@ export default function WhatTime() {
 
     return <Layout><div className={projectClasses.Project}>
         <div className={projectClasses.Main}>
-            <h1 className={projectClasses.ProjectHeader}>What Time</h1>
+            <h1 className={projectClasses.ProjectHeader}>Journaly</h1>
 
             <ul className={projectClasses.LinkList}>
                 <li>
                     <img src={linkIcon} style={{transform: 'translateY(2px)'}}/>
-                    <a href='https://what-time.herokuapp.com/' target='_blank'>Live Website</a>
+                    <a href='https://devpost.com/software/journaly' target='_blank'>Devpost Submission</a>
                 </li>
 
                 <li>
                     <img src={githubIcon}/>
-                    <a href='https://github.com/omerdemirkan/whattime' target='_blank'>Repository</a>
+                    <a href='https://github.com/omerdemirkan/journaly' target='_blank'>Repository</a>
                 </li>
             </ul>
             
@@ -46,19 +47,20 @@ export default function WhatTime() {
             
             <div className={projectClasses.TextSection}>
                 <h3>Description</h3>
-                <p className={projectClasses.ProjectParagraph}>A productivity tool that helps event organizers find times that every member is available, regardless of time-zone. After a user signs up with a username and password, they can create an event survey for a specified day in the future. They then have access to a sharable link. With this link, anybody can submit their availabilities. The user can see times when everyone is available and can narrow down the number of people needed (i.e times 4 people are available), and has the ability to remove and inspect submissions.</p>
+                <p className={projectClasses.ProjectParagraph}>The winner of Facebook’s “Best hack that gives people a voice” prize at Hacktech 2020. Journaly is a platform where users can rate, review and support journalists through a simple chrome extension. Journalists first sign up to the platform with basic information. On the user’s end, if the chrome extension finds a journalist that exists in the database, the user sees a sidebar in their browser from which they can see the journalist’s user-rating. Further, the user has access to links where they can support the journalist (patreon) and review the journalist.</p>
                 
             </div>
             
             <div className={projectClasses.TextSection}>
                 <h3>Challenges</h3>
-                <p className={projectClasses.ProjectParagraph}>Due to the possibility of storing sensitive information (usernames, passwords, events) authentication and authorization proved to be one of the more difficult aspects of this project. Through a verification route on the server, the client sends a stored JavaScript Web Token to the API to both verify and to send a new token with a new expiration date, ensuring that a user needs to log in after a long period of inactivity. Further security measures include a series of salt-rounds (b-crypt) prior to storing passwords and rate-limiting on all routes. One logistical concern was storing availabilities efficiently and manipulating data on the client-side to find times that an x number of people are available.</p>
+                <p className={projectClasses.ProjectParagraph}>One of the roadblocks we reached was that articles vary greatly in how they are structured. Finding a reliable method for finding a journalist’s name proved to be especially difficult. The extension parses the user’s web page for an article. If an article is found, it scours the article for the name of the journalist that wrote it and fetches that journalist’s information (ratings, publishing-house/employer) along with a link to where the user can support the journalist.</p>
 
             </div>
 
             <div className={projectClasses.SubSection}>
                 <h3>Technologies</h3>
                 <div className={projectClasses.TechnologiesBox}>
+                    <img src={chrome}/>
                     <img src={react}/>
                     <img src={redux}/>
                     <img src={node}/>
@@ -70,6 +72,18 @@ export default function WhatTime() {
 
             <div className={projectClasses.SubSection}>
                 <h3>Contributors</h3>
+                <a href='https://github.com/shivaylamba' target='_blank'>
+                    <img 
+                    src='https://avatars1.githubusercontent.com/u/19529592?s=460&u=e23405a9f2609c95ca4361a813db861a82c50e64&v=4'
+                    className={projectClasses.Contributor}
+                    />
+                </a>
+                <a href='https://github.com/OleSnakey' target='_blank'>
+                    <img 
+                    src='https://avatars1.githubusercontent.com/u/44986464?s=460&u=94936d41ddc1f9c411222eb5281dcbc6b74f5529&v=4'
+                    className={projectClasses.Contributor}
+                    />
+                </a>
                 <a href='https://github.com/omerdemirkan' target='_blank'>
                     <img 
                     src='https://avatars2.githubusercontent.com/u/54616154?s=460&u=0dce50d86a6ce79649cb045b5da9127c3cc00bad&v=4'
