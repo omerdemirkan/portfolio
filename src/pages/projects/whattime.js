@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 import Layout from '../../components/Layout/Layout';
 import projectClasses from '../../styles/projectStyles.module.css';
+import {Link} from 'gatsby';
 
 // Images
 import githubIcon from '../../assets/svgs/github.svg';
 import linkIcon from '../../assets/svgs/link.svg';
+import arrow from '../../assets/svgs/arrow.svg';
+
 import react from '../../assets/svgs/technologies/react.svg';
 import redux from '../../assets/svgs/technologies/redux.svg';
 import node from '../../assets/svgs/technologies/node.svg';
@@ -26,6 +29,21 @@ export default function WhatTime() {
     </>;
 
     return <Layout><div className={projectClasses.Project}>
+
+        <Link to='/projects/synonymy'>
+            <span className={projectClasses.PreviousProjectButtonBox}>
+                <img src={arrow}/>
+                <span>Previous</span>
+            </span>
+        </Link>
+
+        <Link to='/projects/workoutshare'>
+            <span className={projectClasses.NextProjectButtonBox}>
+                <span>Next</span>
+                <img src={arrow}/>
+            </span>
+        </Link>
+
         <div className={projectClasses.Main}>
             <h1 className={projectClasses.ProjectHeader}>What Time</h1>
 

@@ -32,7 +32,7 @@ export default () => {
                 <div>
                     <p>I am a Computer Science Student and Full Stack Developer based in <mark>Los Angeles</mark>, and I specialize in building performant web applications.</p>
                     <div className={classes.HeroButtonsBox}>
-                        <Scroll smooth={true} duration={500} offset={-100} to='projects-section'><button className={classes.MainHeaderButton}>See My Work</button></Scroll>
+                        <Scroll smooth={true} duration={500} offset={-80} to='projects-section'><button className={classes.MainHeaderButton}>See My Work</button></Scroll>
                         {/* <Link to='/contact'><button className={classes.SecondaryHeaderButton}>Get In Touch</button></Link> */}
                         <a href='mailto:omerfarukpiano@gmail.com'><button className={classes.SecondaryHeaderButton}>Get In Touch</button></a>
                     </div>

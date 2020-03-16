@@ -2,6 +2,65 @@
     padding: 5vh 5vw;
 }
 
+.PreviousProjectButtonBox {
+    position: fixed;
+    left: calc((100vw - 400px) / 6);
+    top: 40%;
+    display: flex;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+}
+
+.NextProjectButtonBox {
+    position: fixed;
+    right: calc((100vw - 400px) / 6);
+    top: 40%;
+    display: flex;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+}
+
+.PreviousProjectButtonBox img {
+    opacity: .4;
+    transition: opacity 0.1s ease;
+}
+
+.NextProjectButtonBox img {
+    opacity: .4;
+    transform: rotate(180deg);
+    transition: opacity 0.1s ease;
+}
+
+.PreviousProjectButtonBox:hover img {
+    opacity: 1;
+}
+
+.NextProjectButtonBox:hover img {
+    opacity: 1;
+}
+
+.PreviousProjectButtonBox span {
+    opacity: 0;
+    transition: opacity 0.1s ease;
+    color: #313131;
+}
+
+.NextProjectButtonBox span {
+    opacity: 0;
+    transition: opacity 0.1s ease;
+    color: #313131;
+}
+
+.PreviousProjectButtonBox:hover span {
+    opacity: 1;
+}
+
+.NextProjectButtonBox:hover span {
+    opacity: 1;
+}
+
 .Main {
     position: relative;
 
@@ -100,6 +159,18 @@
     transition: .2s ease;
     margin: 0 10px;
     cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+
+
+    .PreviousProjectButtonBox {
+        display: none;
+    }
+    
+    .NextProjectButtonBox {
+        display: none;
+    }
 }
 
 @media (max-width: 768px) {
