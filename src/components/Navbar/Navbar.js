@@ -1,5 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react';
 import classes from './Navbar.module.css';
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 import logo from '../../assets/svgs/portfolio-logo.svg';
 
@@ -12,6 +13,8 @@ export default function Navbar() {
     const [navBackground, setNavBackground] = useState(false);
     const navRef = useRef();
     navRef.current = navBackground;
+
+    const mobileScreen = useMediaQuery('(max-width: 768px)');
 
     useEffect(() => {
         const handleScroll = () => {
@@ -30,7 +33,7 @@ export default function Navbar() {
         <Link className={classes.LogoLink} to='/'>
             <img src={logo} 
             className={classes.Logo} 
-            style={navBackground ? {width: '100px', transform: 'translate(10px)'}: null}/>
+            style={navBackground && !mobileScreen ? {width: '100px', transform: 'translate(10px)'}: null}/>
         </Link>
         <ul className={classes.NavList}>
             <li className={classes.NavListItem}><Link activeClassName={classes.ActiveLink} to='/' className={classes.NavLink}>Home</Link></li>
