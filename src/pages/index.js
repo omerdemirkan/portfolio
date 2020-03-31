@@ -17,6 +17,7 @@ import workoutshare from '../assets/images/projects/workoutshare.jpg';
 import synonymy from '../assets/images/projects/synonymy.jpg';
 import whattime from '../assets/images/projects/whattime.jpg';
 import journaly from '../assets/images/projects/journaly.jpg';
+import socialsense from '../assets/images/projects/socialsense.png';
 
 import {Link as Scroll} from 'react-scroll';
 import {Link} from 'gatsby';
@@ -115,6 +116,12 @@ export default () => {
                 title='Journaly'
                 description='A platform where readers can rate and support journalists (Hacktech 2020 submission).'
                 link='/projects/journaly'
+                />
+                <ProjectCard
+                img={socialsense}
+                title='SocialSense'
+                description='A tool that recommending pics and hashtags for Instagram. (LA Hacks 2020 submission).'
+                link='/projects/socialsense'
                 />
             </div>
         </div>

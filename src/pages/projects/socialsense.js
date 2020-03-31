@@ -44,12 +44,12 @@ export default function WhatTime() {
         </Link>
 
         <div className={projectClasses.Main}>
-            <h1 className={projectClasses.ProjectHeader}>Journaly</h1>
+            <h1 className={projectClasses.ProjectHeader}>SocialSense</h1>
 
             <ul className={projectClasses.LinkList}>
                 <li>
                     <img src={linkIcon} style={{transform: 'translateY(2px)'}}/>
-                    <a href='https://devpost.com/software/socialsense' target='_blank'>Devpost Submission</a>
+                    <a href='https://devpost.com/software/socialsense-ai' target='_blank'>Devpost Submission</a>
                 </li>
 
                 <li>
@@ -86,15 +86,21 @@ export default function WhatTime() {
 
             <div className={projectClasses.SubSection}>
                 <h3>Contributors</h3>
-                <a href='https://github.com/shivaylamba' target='_blank'>
+                <a href='https://github.com/EmmadUsmani' target='_blank'>
                     <img 
-                    src='https://avatars1.githubusercontent.com/u/19529592?s=460&u=e23405a9f2609c95ca4361a813db861a82c50e64&v=4'
+                    src='https://avatars0.githubusercontent.com/u/37751258?s=460&u=314e3aa90535cad609277b221b7704cab706bfa8&v=4'
                     className={projectClasses.Contributor}
                     />
                 </a>
-                <a href='https://github.com/OleSnakey' target='_blank'>
+                <a href='https://github.com/jaivinwylde' target='_blank'>
                     <img 
-                    src='https://avatars1.githubusercontent.com/u/44986464?s=460&u=94936d41ddc1f9c411222eb5281dcbc6b74f5529&v=4'
+                    src='https://avatars0.githubusercontent.com/u/46613979?s=460&u=4c56a3dc5533d907736084c356009b0a5a0d3add&v=4'
+                    className={projectClasses.Contributor}
+                    />
+                </a>
+                <a href='https://github.com/TahaDemirkan' target='_blank'>
+                    <img 
+                    src='https://avatars2.githubusercontent.com/u/59131762?s=460&v=4'
                     className={projectClasses.Contributor}
                     />
                 </a>
