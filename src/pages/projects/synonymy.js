@@ -30,7 +30,7 @@ export default function Synonymy() {
 
     return <Layout><div className={projectClasses.Project}>
 
-        <Link to='/projects/journaly'>
+        <Link to='/projects/socialsense'>
             <span className={projectClasses.PreviousProjectButtonBox}>
                 <img src={arrow}/>
                 <span>Previous</span>

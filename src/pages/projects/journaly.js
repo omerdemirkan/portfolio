@@ -38,7 +38,7 @@ export default function WhatTime() {
             </span>
         </Link>
 
-        <Link to='/projects/synonymy'>
+        <Link to='/projects/socialsense'>
             <span className={projectClasses.NextProjectButtonBox}>
                 <span>Next</span>
                 <img src={arrow}/>
