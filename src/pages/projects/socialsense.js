@@ -44,12 +44,12 @@ export default function WhatTime() {
         </Link>
 
         <div className={projectClasses.Main}>
-            <h1 className={projectClasses.ProjectHeader}>Journaly</h1>
+            <h1 className={projectClasses.ProjectHeader}>SocialSense</h1>
 
             <ul className={projectClasses.LinkList}>
                 <li>
                     <img src={linkIcon} style={{transform: 'translateY(2px)'}}/>
-                    <a href='https://devpost.com/software/socialsense' target='_blank'>Devpost Submission</a>
+                    <a href='https://devpost.com/software/socialsense-ai' target='_blank'>Devpost Submission</a>
                 </li>
 
                 <li>
@@ -63,13 +63,13 @@ export default function WhatTime() {
             
             <div className={projectClasses.TextSection}>
                 <h3>Description</h3>
-                <p className={projectClasses.ProjectParagraph}>The winner of Facebook’s “Best hack that gives people a voice” prize at Hacktech 2020. Journaly is a platform where users can rate, review and support journalists through a simple chrome extension. Journalists first sign up to the platform with basic information. On the user’s end, if the chrome extension finds a journalist that exists in the database, the user sees a sidebar in their browser from which they can see the journalist’s user-rating. Further, the user has access to links where they can support the journalist (patreon) and review the journalist.</p>
+                <p className={projectClasses.ProjectParagraph}>The winner of Oracle’s “Best Hack Using Machine Learning” prize at LA Hacks (UCLA). SocialSense is a web application that enhances Instagram engagement by recommending images and hashtags for posts. After the user enters their username and picks the images they consider uploading, they are given their pics ordered from most to least expected engagement which they can pick from. Once the user chooses an image, the server scrapes the user’s Instagram for data to train and returns a list of up to thirty recommended hashtags along with the expected engagement increase from each hashtag.</p>
                 
             </div>
             
             <div className={projectClasses.TextSection}>
                 <h3>Challenges</h3>
-                <p className={projectClasses.ProjectParagraph}>One of the roadblocks we reached was that articles vary greatly in how they are structured. Finding a reliable method for finding a journalist’s name proved to be especially difficult. The extension parses the user’s web page for an article. If an article is found, it scours the article for the name of the journalist that wrote it and fetches that journalist’s information (ratings, publishing-house/employer) along with a link to where the user can support the journalist.</p>
+                <p className={projectClasses.ProjectParagraph}>The most difficult aspect of SocialSense for me was state management (I worked solely on the client). I opted for global state management in redux due to the many views within a single route. Interacting with the back-end proved to be a learning experience in itself, as the main request needed to be split into smaller, more manageable requests in order to support high-resolution images. Further, images needed to be base64 encoded and the sources for each image needed to be extracted in order to display uploaded images.</p>
 
             </div>
 
@@ -86,15 +86,21 @@ export default function WhatTime() {
 
             <div className={projectClasses.SubSection}>
                 <h3>Contributors</h3>
-                <a href='https://github.com/shivaylamba' target='_blank'>
+                <a href='https://github.com/EmmadUsmani' target='_blank'>
                     <img 
-                    src='https://avatars1.githubusercontent.com/u/19529592?s=460&u=e23405a9f2609c95ca4361a813db861a82c50e64&v=4'
+                    src='https://avatars0.githubusercontent.com/u/37751258?s=460&u=314e3aa90535cad609277b221b7704cab706bfa8&v=4'
                     className={projectClasses.Contributor}
                     />
                 </a>
-                <a href='https://github.com/OleSnakey' target='_blank'>
+                <a href='https://github.com/jaivinwylde' target='_blank'>
                     <img 
-                    src='https://avatars1.githubusercontent.com/u/44986464?s=460&u=94936d41ddc1f9c411222eb5281dcbc6b74f5529&v=4'
+                    src='https://avatars0.githubusercontent.com/u/46613979?s=460&u=4c56a3dc5533d907736084c356009b0a5a0d3add&v=4'
+                    className={projectClasses.Contributor}
+                    />
+                </a>
+                <a href='https://github.com/TahaDemirkan' target='_blank'>
+                    <img 
+                    src='https://avatars2.githubusercontent.com/u/59131762?s=460&v=4'
                     className={projectClasses.Contributor}
                     />
                 </a>

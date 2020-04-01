@@ -17,6 +17,7 @@ import workoutshare from '../assets/images/projects/workoutshare.jpg';
 import synonymy from '../assets/images/projects/synonymy.jpg';
 import whattime from '../assets/images/projects/whattime.jpg';
 import journaly from '../assets/images/projects/journaly.jpg';
+import socialsense from '../assets/images/projects/socialsense.jpg';
 
 import {Link as Scroll} from 'react-scroll';
 import {Link} from 'gatsby';
@@ -48,7 +49,7 @@ export default () => {
             <div className={classes.MePairBox}>
                 <img src={me}/>
                 <div>
-                    <p>I am a Turkish-American Computer Science student at Los Angeles Mission College and a hobbyist Software Engineer. I have a passion for building full fledged web applications from the bottom up: from simple and intuitive user interfaces to API design.</p>
+                    <p>I am a Turkish-American Computer Science student at Los Angeles Mission College and a hobbyist Software Developer. I have a passion for building full fledged web applications from the bottom up: from simple and intuitive user interfaces to API design.</p>
                 </div>
             </div>
         </div>
@@ -115,6 +116,12 @@ export default () => {
                 title='Journaly'
                 description='A platform where readers can rate and support journalists (Hacktech 2020 submission).'
                 link='/projects/journaly'
+                />
+                <ProjectCard
+                img={socialsense}
+                title='SocialSense'
+                description='A tool that recommends pics and hashtags for Instagram posts (Hacktech 2020 submission).'
+                link='/projects/socialsense'
                 />
             </div>
         </div>
