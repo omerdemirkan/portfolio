@@ -6,6 +6,11 @@ body {
     color: #313131;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 p {
     font-family: 'Baloo Chettan 2', sans-serif;
     font-size: 1.1rem;
@@ -72,6 +77,42 @@ button {
     outline: none;
 } 
 
+.HeroLinkBox {
+    display: flex;
+    justify-content: center;
+}
+
+.HeroLinkBox > a {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    width: 40px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 999px;
+    opacity: .6;
+    position: relative;
+    overflow: hidden;
+    transition: width 0.1s ease-out;
+}
+
+.HeroLinkBox a:hover {
+    opacity: .8;
+    width: 150px;
+}
+
+.HeroLinkBox > a > img {
+    margin: 10px;
+}
+
+.HeroLinkBox a span {
+    position: absolute;
+    top: 10px;
+    left: 40px;
+    width: 100px;
+    font-weight: 600;
+}
+
 .MainHeaderButton {
     border: none;
     color: white;
@@ -95,7 +136,7 @@ button {
     color: rgb(0, 78, 194);
 }
 
-.HeroSection img {
+.HeroProgrammer {
     position: absolute;
     bottom: -2px;
     left: 50%;

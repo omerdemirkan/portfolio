@@ -8,6 +8,7 @@ import classes from '../styles/index.module.css';
 import heroImage from '../assets/svgs/hero-image.svg';
 import me from '../assets/images/me.png';
 import waves from '../assets/svgs/waves.svg';
+import resume from '../assets/svgs/resume.svg'
 
 import frontEnd from '../assets/svgs/skills/front-end.svg';
 import backEnd from '../assets/svgs/skills/back-end.svg';
@@ -20,7 +21,6 @@ import journaly from '../assets/images/projects/journaly.jpg';
 import socialsense from '../assets/images/projects/socialsense.jpg';
 
 import {Link as Scroll} from 'react-scroll';
-import {Link} from 'gatsby';
 
 export default () => {
     return <Layout>
@@ -33,14 +33,26 @@ export default () => {
                 <div>
                     <p>I am a Computer Science Student and Full Stack Developer based in <mark>Los Angeles</mark>, and I specialize in building performant web applications.</p>
                     <div className={classes.HeroButtonsBox}>
-                        <Scroll smooth={true} duration={500} offset={-80} to='projects-section'><button className={classes.MainHeaderButton}>See My Work</button></Scroll>
+                        <Scroll smooth={true} duration={500} offset={0} to='projects-section'><button className={classes.MainHeaderButton}>See My Work</button></Scroll>
                         {/* <Link to='/contact'><button className={classes.SecondaryHeaderButton}>Get In Touch</button></Link> */}
                         <a href='mailto:omerfarukpiano@gmail.com'><button className={classes.SecondaryHeaderButton}>Get In Touch</button></a>
+                    </div>
+
+                    <div className={classes.HeroLinkBox}>
+                        <a 
+                        target='_blank' 
+                        href='https://drive.google.com/file/d/1n2PAmeDmpYclGoBsoS5eeTrCHfrf5q5F/view?usp=sharing'
+                        >
+                            <img style={{backgroundColor: 'white'}} src={resume} alt='resume'/>
+                            <span>My Resume</span> 
+                        </a>
                     </div>
                 </div>
                 
             </div>
-            <img src={heroImage}/>
+            <img 
+            className={classes.HeroProgrammer}
+            src={heroImage}/>
             
         </div>
 
